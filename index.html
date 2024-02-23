@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge Encriptador Alura Latam</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Challenge Encriptador Alura Latam</title>
 </head>
 <body>
     <header>
@@ -14,10 +17,10 @@
     <main>
         <section class="seccion1">
             <div class="cajaContenedorUno">
-                <textarea placeholder="Ingrese el código Aquí" name="cajaCifrarTexto" ></textarea>
+                <textarea placeholder="Ingrese el código Aquí" class="cajaCifrarTexto" ></textarea>
 
             </div>
-            <div class="imagen_exc">
+            <div class="imagen-exc">
                 <img src="imagenes/bi_exclamation-circle-fill.svg" alt="Circulo de Exclamacion">
                 <p>Solo letras minúsculas y sin acentos</p>
                
@@ -29,16 +32,22 @@
         </section>
         <section class="seccion2">
             <div class="cajaContenedorDos">
-                <img src="imagenes/Muñeco.svg" alt="Muñeco Desncriptador">
-                <textarea></textarea>
+                <img src="imagenes/Muñeco.svg" alt="Muñeco Desencriptador">
             </div>
             <div>
+                <h1>Ningún mensaje fue <br> encontrado</h1>
+                <p>Ingrese el texto que desees encriptar o <br> desencriptar</p>
+            </div>
+            <div class="cajaBoton">
                 <button onclick="botonCopiar();" class="botCopiar">Copiar</button>
+            </div>
+            <div class="cajaResultado">
+                <p class="texto-resultado"></p>
             </div>
         </section>
 
     </main>
-    <footer>
+    <footer class="autor">
         <p>Fabian Morisi - 2024</p>
     </footer>
 
