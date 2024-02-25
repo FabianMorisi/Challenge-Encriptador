@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,17 +13,16 @@
 <body>
     <header>
         <img class="logo" src="imagenes/Logo.svg" alt="Logo Alura">
-
     </header>
     <main>
         <section class="seccion1">
             <div class="cajaContenedorUno">
-                <textarea placeholder="Ingrese el código Aquí" class="cajaCifrarTexto" ></textarea>
+                <textarea cols="30" rows="10" placeholder="  Ingrese el código Aquí" class="cajaCifrarTexto" ></textarea>
 
             </div>
-            <div class="imagen-exc">
+            <div class="imagenExc">
                 <img src="imagenes/bi_exclamation-circle-fill.svg" alt="Circulo de Exclamacion">
-                <p>Solo letras minúsculas y sin acentos</p>
+                <p class="textoExc">Solo letras minúsculas y sin acentos</p>
                
             </div>
             <div class="contenedorBotones">
@@ -32,9 +32,9 @@
         </section>
         <section class="seccion2">
             <div class="cajaContenedorDos">
-                <img src="imagenes/Muñeco.svg" alt="Muñeco Desencriptador">
+                <img class="imagenVirtual" src="imagenes/Virtual-Machine-Recovery-1152x1536.jpg" alt="Imagen Desencriptador">
             </div>
-            <div>
+            <div class="contenedorParr">
                 <h1>Ningún mensaje fue <br> encontrado</h1>
                 <p>Ingrese el texto que desees encriptar o <br> desencriptar</p>
             </div>
@@ -47,8 +47,11 @@
         </section>
 
     </main>
-    <footer class="autor">
-        <p>Fabian Morisi - 2024</p>
+    <footer >
+        <div class="autor">
+            <p>Fabian Morisi - Alura Latam - 2024</p>
+        </div>
+       
     </footer>
 
     <script src="app.js"></script>
